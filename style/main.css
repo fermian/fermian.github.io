@@ -1,0 +1,92 @@
+@media screen and (max-width: 1280px) {
+    #main {
+        width: 90% !important;;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #main {
+        width: 60% !important;;
+    }
+}
+
+body {
+    font-family: 'IBM Plex Serif', Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.25;
+}
+
+a {
+    color: rgb(3, 102, 214);
+    text-decoration: underline;
+}
+
+em {
+    font-style: italic;
+}
+
+#main {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.6em;
+}
+
+header {
+    padding-top: 12vh;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: right;
+}
+
+header h1 .highlight {
+    background: #000;
+    color: #fff;
+    padding: 0 20px;
+    font-style: italic;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style:italic;
+    text-align: right;
+    color: #888;
+    margin: 10px 0;
+}
+
+main h1 {
+    font-size: 3rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+#projects li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+#projects p {
+    margin-bottom: 10px;
+}
+
+#projects p:first-child .fas {
+    font-size: 1.3rem;
+    color: rgb(3, 102, 214);
+}
+
+#projects p:first-child a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+#projects p:first-child a:hover {
+    text-decoration: underline;
+}
