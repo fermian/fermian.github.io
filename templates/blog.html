@@ -1,0 +1,9 @@
+{% set subpage="web log" %}
+{% include "header.html" %}
+<section class="metadata">
+    <p>posted on <time datetime='{{ created_time | date(format="%Y-%m-%d") }}'>{{ created_time | date(format="%Y-%m-%d") }}</time></p>
+</section>
+<main>
+    {{ contents | safe }}
+</main>
+{% include "footer.html" %}

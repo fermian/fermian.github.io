@@ -1,0 +1,32 @@
+{% include "header.html" %}
+<main>
+    <h1>be</h1>
+    <section>
+        <p>fermain. pseudonym.</p>
+    </section>
+    <h1>build</h1>
+    <section>
+    <ul id="projects">
+        <li>
+            <p><i class="fas fa-code"></i> <a href="https://github.com/aument-lang/aument">Aument</a></p>
+            <p>A half-hobbyist, half-serious attempt at creating a dynamically-typed scripting language. Designed to be <em>performant</em>, <em>simple</em> and <em>easy to use</em>.</p>
+        </li>
+        <li>
+            <p><i class="fas fa-code"></i> <a href="https://github.com/aument-lang/lyra">Lyra</a></p>
+            <p>Lowered intermediate representation for Aument. A compiler which generates optimized C code from Aument source code.</p>
+        </li>
+    </ul>
+    </section>
+    <h1>blog</h1>
+    <section>
+    <table>
+        {% for post in posts %}
+        <tr>
+            <td>{{ post.created_time | date(format="%Y-%m-%d") }}</td>
+            <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    </section>
+</main>
+{% include "footer.html" %}

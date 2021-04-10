@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title>{{ title }} – the fermian paradox</title>
+    {% else %}
+    <title>the fermian paradox</title>
+    {% endif %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/fontawesome.min.css">
+</head>
+<body>
+    <div id="main">
+        {% if subpage %}
+        <header>
+            <h1>the <span class="highlight">{{ subpage }}</span></h1>
+            <p><a href="/">&laquo; back to home</a></p>
+        </header>
+        {% else %}
+        <header>
+            <h1><a href="/">the <span class="highlight">fermian</span> paradox</a></h1>
+            <p>an exploration into the art of building things</p>
+        </header>
+        {% endif %}
