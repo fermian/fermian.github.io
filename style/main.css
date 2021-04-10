@@ -65,6 +65,11 @@ main h1 {
     margin-bottom: 20px;
 }
 
+main h1 .fas {
+    font-size: 2.3rem;
+    margin: 10px;
+}
+
 main section {
     margin-bottom: 40px;
 }
