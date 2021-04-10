@@ -1,12 +1,18 @@
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1000px) {
     #main {
-        width: 90% !important;;
+        width: calc(100% - 40px) !important;
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
     #main {
-        width: 60% !important;;
+        width: 90% !important;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    #main {
+        width: 60% !important;
     }
 }
 
